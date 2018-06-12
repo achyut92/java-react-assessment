@@ -10,3 +10,4 @@ Backend:
 	2. Update user, password of dbConf.js in ./util/dbConf.js (shared separately)
 	2. npm install
 	3. npm start
+    
