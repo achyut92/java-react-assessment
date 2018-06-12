@@ -53,7 +53,7 @@ app.use(function (req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   if (err) {
-    next(err);
+    res.status(404).json(error)
   } else {
     next();
   }
