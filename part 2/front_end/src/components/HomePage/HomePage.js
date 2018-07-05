@@ -74,7 +74,7 @@ class HomePage extends Component {
   handleSearch = () => {
     const day = moment(this.state.dateTime).day();
     const hour = moment(this.state.dateTime).hour() * 60;
-    axios.get(serverUrl.url + `/api/restaurant/test?day=` + day + '&time=' + hour)
+    axios.get(serverUrl.url + `/api/restaurant/searchRestaurants?day=` + day + '&time=' + hour)
       .then(res => {
         this.setState({ restaurants: res.data, searchStatus: true });
         console.log(this.state.restaurants);
